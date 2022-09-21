@@ -2,8 +2,8 @@ import * as React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import {Route, Routes} from 'react-router-dom';
-import Home from './Home';
-import Search from './Search';
+import Home from './pages/Home.js';
+import Search from './pages/Search.js';
 
 function App() {
   return (
