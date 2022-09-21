@@ -12,15 +12,10 @@ export default function Search() {
       const json = await response.json();
       setPerson(json);
       console.log(json);
-    } catch (error) {
-      console.log(error);
-    }
+      } catch (error) {
+        console.log(error);
+      }
   };
-
-  
-  
-
-    
 
     return (
       <div className="search">
@@ -31,8 +26,27 @@ export default function Search() {
           onChange={(event) => setSearch(event.target.value)}
         />
         <button onClick={getPerson}>Search</button>
-        <h1>{person.numberOfHits} </h1>
+        <h2>Number of hits: {person.numberOfHits} </h2>
+        <div className="person">
+          {person.hits &&
+            person.hits.map((person) => (
+              <div key={person.id} className="perPerson">
+                <h3>Full name: {person.name}</h3>
+                <p>Aliases: {person.aliases}</p>
+                <p>Birth Date: {person.birth_date}</p>
+                <p>Countries: {person.countries}</p>
+                <p>Dataset: {person.dataset}</p>
+                <p>Emails: {person.emails}</p>
+                <p>First Seen: {person.first_seen}</p>
+                <p>Last Seen: {person.last_seen}</p>
+                <p>Phones: {person.phones}</p>
+                <p>Sanctions: {person.sanctions}</p>
+                
+              </div>
+            ))}
+
     
-    </div>
+        </div>
+      </div>
     );
-  }
+}

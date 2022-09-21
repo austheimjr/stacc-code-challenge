@@ -49,3 +49,13 @@ body{
 .nav li:hover{
     background-color: #777;
 }
+
+.perPerson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 3px solid rgba(241, 148, 7, 0.952);
+    border-radius: 30px;
+    margin-top: .25rem;
+}
