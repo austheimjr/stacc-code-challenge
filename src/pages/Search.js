@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-
+//style søkefelt og knapp
 export default function Search() {
 
    const [search, setSearch] = useState("");
@@ -19,7 +19,7 @@ export default function Search() {
 
     return (
       <div className="search">
-        <h1>Search</h1>
+        <h1>Search for a PEP</h1>
         <input
           type="text"
           placeholder="Search for a person"
@@ -37,8 +37,6 @@ export default function Search() {
                 <p>Countries: {person.countries}</p>
                 <p>Dataset: {person.dataset}</p>
                 <p>Emails: {person.emails}</p>
-                <p>First Seen: {person.first_seen}</p>
-                <p>Last Seen: {person.last_seen}</p>
                 <p>Phones: {person.phones}</p>
                 <p>Sanctions: {person.sanctions}</p>
                 

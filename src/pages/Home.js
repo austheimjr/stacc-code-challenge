@@ -1,4 +1,5 @@
 export default function Home() {
+  //style hjemmesiden som forklarer hva man kan gjøre
     return (
       <div className="home">
         <h1>Home</h1>
