@@ -4,7 +4,7 @@ export default function Navbar(){
     return (<nav className="nav">
         <Link to="/" className="site-title">KYC Search</Link>
         <ul>
-            <CustomLink to="/search">Individual Search</CustomLink>
+            <CustomLink to="/search">PEP Search</CustomLink>
             <CustomLink to="/companySearch">Company Search</CustomLink>
         </ul>
     </nav>

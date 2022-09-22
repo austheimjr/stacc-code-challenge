@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-//style søkefelt og knapp
+
 export default function CompanySearch() {
 
     const [search, setSearch] = useState("");
