@@ -84,10 +84,25 @@ body{
 .button-style{
     border: 1px solid rgb(0, 0, 0);
     appearance: none;
-    background: #D59109;
+    background: #1863f0;
     padding: 12px;
     border-radius: 3px;
     width: 100px;
     font-size: 14px;
 
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(117, 90, 1);
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(24, 23, 23);
 }
