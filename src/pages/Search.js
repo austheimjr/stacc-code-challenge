@@ -14,7 +14,7 @@ export default function Search() {
       console.log(json);
       } catch (error) {
         console.log(error);
-      }
+      };
   };
 
     return (
@@ -48,4 +48,4 @@ export default function Search() {
             ))}
       </div>
     );
-}
+};

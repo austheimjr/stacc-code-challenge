@@ -14,7 +14,7 @@ export default function CompanySearch() {
             console.log(json);
         } catch (error) {
             console.log(error);
-        }
+        };
     };
 
         return (
@@ -46,4 +46,4 @@ export default function CompanySearch() {
             </div>
         );
     
-}
+};

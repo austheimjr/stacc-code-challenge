@@ -5,7 +5,7 @@ import Home from './pages/Home.js';
 import Search from './pages/Search.js';
 import CompanySearch from './pages/CompanySearch';
 
-function App() {
+export default function App() {
   return (
     <>
     <Navbar/>
@@ -18,6 +18,6 @@ function App() {
     </div>
     </>
   );
-}
+};
 
-export default App;
+
