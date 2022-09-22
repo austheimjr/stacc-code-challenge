@@ -4,6 +4,8 @@
 
 body{
     margin: 0;
+    background-color: #18191A;
+    color: white;
 }
 
 .container{
@@ -55,20 +57,37 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(117, 90, 1);
     border-radius: 30px;
     margin-top: .25rem;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color: rgb(24, 23, 23);
 }
-.company{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20%;
-    margin-left: 20%;
-    gap: 1rem;
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 30px;
-    margin-top: 1rem;
+
+.input-style input{
+    border: 1px solid rgb(0, 0, 0);
+    appearance: none;
+    background: #cfd6ee;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+
+}
+.search{
+    background-Color: "#1D223F";
+    align-Items: "center";
+    justify-Content: "center";
+}
+
+.button-style{
+    border: 1px solid rgb(0, 0, 0);
+    appearance: none;
+    background: #D59109;
+    padding: 12px;
+    border-radius: 3px;
+    width: 100px;
+    font-size: 14px;
+
 }

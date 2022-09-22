@@ -20,17 +20,17 @@ export default function CompanySearch() {
         return (
             <div className="search">
                 <h1>Search for a company</h1>
+                <label className="input-style">
                 <input
                     type="string"
                     placeholder="Org. number"
                     onChange={(event) => setSearch(event.target.value)}
                 />
-                <button onClick={getCompany}>Search</button>
-                
+                <button className="button-style" onClick={getCompany}>Search</button>
+                </label>
                     <h1>{company.navn}</h1>
-                    
                     {company.forretningsadresse && company.naeringskode1 && company.organisasjonsform && (
-                        <div className="company">
+                        <div className="perPerson">
                             <p>Number of employees: {company.antallAnsatte}</p>
                             <p>Address: {company.forretningsadresse.adresse}</p>
                             <p>Postal code: {company.forretningsadresse.postnummer}</p>

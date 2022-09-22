@@ -20,31 +20,32 @@ export default function Search() {
     return (
       <div className="search">
         <h1>Search for a PEP</h1>
+        <label className="input-style">
         <input
           type="text"
           placeholder="Search for a person"
           onChange={(event) => setSearch(event.target.value)}
         />
-        <button onClick={getPerson}>Search</button>
+        <button className="button-style" onClick={getPerson}>Search</button>
+        </label>
+        
         <h2>Number of hits: {person.numberOfHits} </h2>
-        <div className="person">
+        
           {person.hits &&
             person.hits.map((person) => (
               <div key={person.id} className="perPerson">
                 <h3>Full name: {person.name}</h3>
                 <p>Aliases: {person.aliases}</p>
                 <p>Birth Date: {person.birth_date}</p>
-                <p>Countries: {person.countries}</p>
+                <p>Country: {person.countries}</p>
                 <p>Dataset: {person.dataset}</p>
                 <p>Emails: {person.emails}</p>
                 <p>Phones: {person.phones}</p>
                 <p>Sanctions: {person.sanctions}</p>
                 
+                
               </div>
             ))}
-
-    
-        </div>
       </div>
     );
 }
